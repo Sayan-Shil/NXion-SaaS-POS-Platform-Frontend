@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
+import { Dialog, DialogClose, DialogContent, DialogHeader } from "@/components/ui/dialog";
 import { Play } from "lucide-react";
 import React from "react";
 

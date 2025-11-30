@@ -43,7 +43,7 @@ const [showHeldOrderDialog,setShowHeldOrderDialog] = useState(false)
         <CartSummary />
       </div>
 
-      <HeldOrderDialog showHeldOrderDialog={setShowHeldOrderDialog} setShowHeldOrderDialog={setShowHeldOrderDialog} />
+      <HeldOrderDialog showHeldOrderDialog={showHeldOrderDialog} setShowHeldOrderDialog={setShowHeldOrderDialog} />
     </>
   );
 };
