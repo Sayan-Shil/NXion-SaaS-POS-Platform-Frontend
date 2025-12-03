@@ -67,7 +67,7 @@ function RecentOrderTable() {
         </CardHeader>
         <CardContent>
              <Table>
-              <TableHeader className="bg-gradient-to-r from-violet-50 to-violet-100">
+              <TableHeader className="bg-linear-to-r from-violet-50 to-violet-100">
                 <TableRow>
                   <TableHead className="text-violet-700 font-semibold">
                     Order ID
@@ -93,7 +93,7 @@ function RecentOrderTable() {
                     }`}
                   >
                     <TableCell className="font-medium text-gray-800 dark:text-gray-200">
-                      #{order.id}
+                      #v{order.id}
                     </TableCell>
                     <TableCell>{order.createdAt}</TableCell>
                     <TableCell>{order.paymentType}</TableCell>
