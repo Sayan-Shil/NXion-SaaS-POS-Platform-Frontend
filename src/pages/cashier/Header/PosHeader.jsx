@@ -2,13 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { TextAlignJustify } from "lucide-react";
 import React from "react";
+import { UseSidebar } from "@/pages/context/hooks/UseSidebar";
 
 function PosHeader() {
+  const {setSideBarOpen} = UseSidebar();
   return (
     <div className="bg-card border-b px-6 py-4">
       <div className="flex items-center justify-between">
         <div>
-          <Button>
+          <Button onClick={()=>setSideBarOpen(true)}>
             <TextAlignJustify />
           </Button>
         </div>
