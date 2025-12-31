@@ -44,7 +44,7 @@ const inventories = [
   },
 ];
 
-function InventoryTable() {
+function InventoryTable({setIsEditDialogOpen}) {
   return (
     <Card>
       <CardHeader>
@@ -95,8 +95,10 @@ function InventoryTable() {
                 <TableCell className="text-right font-semibold">
                   {item.quantity}
                 </TableCell>
+
+                {/* EDIT BUTTON (added) */}
                 <TableCell className="text-right">
-                  <Button variant="outline" size="icon">
+                  <Button onClick={()=>setIsEditDialogOpen(true)} variant="outline" size="icon">
                     <Edit className="h-4 w-4" />
                   </Button>
                 </TableCell>
