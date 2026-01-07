@@ -12,25 +12,13 @@ import {
   Users2,
 } from "lucide-react";
 import React from "react";
-import { Link, useLocation } from "react-router";
+import { Link, useLocation } from "react-router-dom";
 
-const navItems = [
-  { name: "Dashboard", path: "/branch/dashboard", icon: <LayoutDashboard className="w-5 h-5" /> },
-  { name: "Orders", path: "/branch/orders", icon: <ShoppingBag className="w-5 h-5" /> },
-  { name: "Transactions", path: "/branch/transactions", icon: <CreditCardIcon className="w-5 h-5" /> },
-  { name: "Inventory", path: "/branch/inventory", icon: <Package className="w-5 h-5" /> },
-  { name: "Employees", path: "/branch/employees", icon: <Users2 className="w-5 h-5" /> },
-  { name: "Customers", path: "/branch/customers", icon: <UserCircleIcon className="w-5 h-5" /> },
-  { name: "Reports", path: "/branch/reports", icon: <FileTextIcon className="w-5 h-5" /> },
-  { name: "Settings", path: "/branch/settings", icon: <Settings2 className="w-5 h-5" /> },
-];
 
-const branch = {
-    name: "Kolkata Sub Branch" ,
-    address : "Belgharia,Kolkata-56"
-}
 
-function BranchSidebar() {
+
+
+function BranchSidebar({branch,navItems = []}) {
   const location = useLocation();
 
   return (

@@ -36,7 +36,7 @@ function Reports() {
           </Button>
         </div>
       </div>
-      <Tabs>
+      <Tabs defaultValue="overview">
         <TabsList>
           <TabsTrigger value="overview" className={"flex items-center gap-2"}>
             <BarChart2 className="w-4 h-4" />
