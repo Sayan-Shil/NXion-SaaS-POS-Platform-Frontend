@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/dialog";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Plus } from "lucide-react";
 import CategoryForm from "./CategoryForm";
 import CategoryTable from "./CategoryTable";
