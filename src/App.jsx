@@ -4,6 +4,7 @@ import BranchRoute from "./routes/BranchRoute";
 import CashierRouter from "./routes/CashierRouter";
 import AdminLayout from "./pages/super-admin/AdminLayout";
 import SuperAdminRoute from "./routes/SuperAdminRoute";
+import Login from "./pages/auth/Login";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/branch/*" element={<BranchRoute />} />
       <Route path="/cashier/*" element={<CashierRouter />} />
       <Route path="/super-admin/*" element={<SuperAdminRoute />} />
+       <Route path="/login" element={<Login/>} />
     </Routes>
   );
 }
