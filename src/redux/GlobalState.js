@@ -10,6 +10,8 @@ import categoryReducer from "./feature/Category/categorySlice.js"
 import employeeReducer from "./feature/Employee/employeeSlice.js"
 import storeReducer from "./feature/Store/storeSlice.js"
 import productReducer from "./feature/Product/productSlice.js"
+import subscriptionPlanReducer from "./feature/SubscriptionPlan/subscriptionSlice.js"
+import inventoryReducer from"./feature/Inventory/inventorySlice.js"
 
 const globalState  = configureStore({
     reducer: {
@@ -23,7 +25,9 @@ const globalState  = configureStore({
         category : categoryReducer ,
         employee : employeeReducer ,
         store : storeReducer,
-        product: productReducer
+        product: productReducer,
+        subscriptionPlan: subscriptionPlanReducer,
+        inventory: inventoryReducer
     }
 })
 
