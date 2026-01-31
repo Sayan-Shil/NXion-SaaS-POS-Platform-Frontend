@@ -12,6 +12,8 @@ import storeReducer from "./feature/Store/storeSlice.js"
 import productReducer from "./feature/Product/productSlice.js"
 import subscriptionPlanReducer from "./feature/SubscriptionPlan/subscriptionSlice.js"
 import inventoryReducer from"./feature/Inventory/inventorySlice.js"
+import branchAnalyticsReducer from "./feature/BranchAnalytics/branchAnalyticsSlice.js"
+import storeAnalyticsReducer from "./feature/StoreAnalytics/storeAnalyticsSlice.js"
 
 const globalState  = configureStore({
     reducer: {
@@ -27,7 +29,9 @@ const globalState  = configureStore({
         store : storeReducer,
         product: productReducer,
         subscriptionPlan: subscriptionPlanReducer,
-        inventory: inventoryReducer
+        inventory: inventoryReducer,
+        branchAnalytics: branchAnalyticsReducer,
+        storeAnalytics : storeAnalyticsReducer
     }
 })
 
