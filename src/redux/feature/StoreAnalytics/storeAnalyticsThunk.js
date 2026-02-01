@@ -2,7 +2,6 @@ import { getAuthHeaders } from "@/utils/getAuthHeader";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import api from "@/utils/api";
 
-// 🔹 Get Store Overview (KPI Summary)
 export const getStoreOverview = createAsyncThunk(
   "storeAnalytics/getStoreOverview",
   async (storeAdminId, { rejectWithValue }) => {
@@ -33,7 +32,6 @@ export const getStoreOverview = createAsyncThunk(
   }
 );
 
-// 🔹 Get Sales Trends by Time (daily/weekly/monthly)
 export const getSalesTrends = createAsyncThunk(
   "storeAnalytics/getSalesTrends",
   async ({ storeAdminId, period }, { rejectWithValue }) => {
@@ -66,7 +64,6 @@ export const getSalesTrends = createAsyncThunk(
   }
 );
 
-// 🔹 Get Monthly Sales Chart (line)
 export const getMonthlySales = createAsyncThunk(
   "storeAnalytics/getMonthlySales",
   async (storeAdminId, { rejectWithValue }) => {
@@ -98,7 +95,6 @@ export const getMonthlySales = createAsyncThunk(
   }
 );
 
-// 🔹 Get Daily Sales Chart (line)
 export const getDailySales = createAsyncThunk(
   "storeAnalytics/getDailySales",
   async (storeAdminId, { rejectWithValue }) => {
@@ -130,7 +126,6 @@ export const getDailySales = createAsyncThunk(
   }
 );
 
-// 🔹 Get Sales by Product Category (pie/bar)
 export const getSalesByCategory = createAsyncThunk(
   "storeAnalytics/getSalesByCategory",
   async (storeAdminId, { rejectWithValue }) => {
@@ -162,7 +157,6 @@ export const getSalesByCategory = createAsyncThunk(
   }
 );
 
-// 🔹 Get Sales by Payment Method (pie)
 export const getSalesByPaymentMethod = createAsyncThunk(
   "storeAnalytics/getSalesByPaymentMethod",
   async (storeAdminId, { rejectWithValue }) => {
@@ -194,7 +188,6 @@ export const getSalesByPaymentMethod = createAsyncThunk(
   }
 );
 
-// 🔹 Get Sales by Branch (bar)
 export const getSalesByBranch = createAsyncThunk(
   "storeAnalytics/getSalesByBranch",
   async (storeAdminId, { rejectWithValue }) => {

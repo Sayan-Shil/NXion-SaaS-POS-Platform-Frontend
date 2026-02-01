@@ -53,7 +53,8 @@ const subscriptionPlanSlice = createSlice({
       })
       .addCase(deleteSubscriptionPlan.fulfilled, (state, action) => {
         state.loading = false;
-        if(selectedPlan && selectedPlan.id === action.payload.id) selectedPlan=null;
+        if (selectedPlan && selectedPlan.id === action.payload.id)
+          selectedPlan = null;
         state.plans = state.plans.filter(
           (plan) => plan.id !== action.payload.id,
         );
@@ -69,7 +70,7 @@ const subscriptionPlanSlice = createSlice({
       })
       .addCase(getAllSubscriptionPlanById.fulfilled, (state, action) => {
         state.loading = false;
-        state.selectedPlan = action.payload.id
+        state.selectedPlan = action.payload.id;
       })
       .addCase(getAllSubscriptionPlanById.rejected, (state, action) => {
         state.loading = false;
@@ -82,7 +83,7 @@ const subscriptionPlanSlice = createSlice({
       })
       .addCase(getAllSubscriptionPlans.fulfilled, (state, action) => {
         state.loading = false;
-        state.plans = action.payload.id
+        state.plans = action.payload.id;
       })
       .addCase(getAllSubscriptionPlans.rejected, (state, action) => {
         state.loading = false;

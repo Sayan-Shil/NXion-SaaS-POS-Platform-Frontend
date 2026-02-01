@@ -115,9 +115,11 @@ const storeSlice = createSlice({
       })
       .addCase(moderateStore.fulfilled, (state, action) => {
         state.loading = false;
-        const updated  = action.payload;
+        const updated = action.payload;
 
-        state.stores = state.stores.map((e)=>e.id === updated.id ? updated : e)
+        state.stores = state.stores.map((e) =>
+          e.id === updated.id ? updated : e,
+        );
       })
       .addCase(moderateStore.rejected, (state, action) => {
         state.loading = false;
