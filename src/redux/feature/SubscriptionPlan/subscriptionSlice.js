@@ -66,7 +66,7 @@ const subscriptionPlanSlice = createSlice({
 
       .addCase(getAllSubscriptionPlanById.pending, (state) => {
         state.loading = true;
-        state.error = null;
+        state.error = null; 
       })
       .addCase(getAllSubscriptionPlanById.fulfilled, (state, action) => {
         state.loading = false;

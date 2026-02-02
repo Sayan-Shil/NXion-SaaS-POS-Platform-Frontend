@@ -45,7 +45,7 @@ export const getAllSubscriptionPlans = createAsyncThunk("subscriptionPlan/getAll
             const response = await api.get(`/api/super-admin/subscription-plans`,{
             headers,
             })
-            console.log("Get All  Subscription Plan Success ",response.data);
+            console.log("Get All Subscription Plan Success ",response.data);
             return response.data;
 
         }catch(error){
