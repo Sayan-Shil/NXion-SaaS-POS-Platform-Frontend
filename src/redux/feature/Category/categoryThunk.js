@@ -55,7 +55,7 @@ export const updateCategory = createAsyncThunk("category/update",
 )
 
 export const deleteCategory = createAsyncThunk("category/update",
-    async (id ,{rejectWithValue})=>{
+    async (id,{rejectWithValue})=>{
         try{
             const headers  = getAuthHeaders();
             const response = await api.delete(`/api/categories/${id}`,{
